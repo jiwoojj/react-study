@@ -1,0 +1,30 @@
+memoization
+- 함수형 컴포넌트에서 다른 변화 때문에 연산이 되는 불필요한 연산을 안하게 하기 위해 사용한다.
+
+useMemo란?
+- useMemo는 메모리에 있는 캐시를 사용하는 함수
+  캐시에 있는 것을 쓴다는 것은 최초에 마운트 할때 , 연산결과를 캐시에 담아놓고
+  리랜더링이 있을때 캐시와 결과를 비교하야 , 내가 원하는 값의 변화를 줄때만 연산을 수행한다.
+  이것을 memoization이라고 부른다.
+
+====================================================
+custom hook 패턴 구조 // 참조
+[components]
+[utils]
+   - arrayheler.js
+   - parseheler.js
+[consts]
+   - key.js (상수, 문자열)
+[styles]
+   - theme.js
+   - globalStyle.js
+   - common.js
+   ...
+[pages]
+   [Home]
+      [Hooks]
+      [Components]
+      -home.js
+[routes]
+[hooks]
+... etc
