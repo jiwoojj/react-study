@@ -31,7 +31,7 @@ const SignUp = () => {
             {...register("email", {
               required: true,
               pattern: {
-                value: emailRegex
+                value: emailRegex,
                 message: "이메일 형식이 아닙니다"
               }
             })}
