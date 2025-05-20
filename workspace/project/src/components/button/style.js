@@ -10,6 +10,9 @@ const variantCSS = {
   `,
   white : css`
     background-color: ${({theme}) => theme.PALLETE.primary["white"]};
+  `,
+  gray100 : css`
+  background-color: ${({theme}) => theme.PALLETE.gray["100"]};
   `
 };
 
